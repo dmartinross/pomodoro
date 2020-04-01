@@ -30,9 +30,18 @@ def pomodoro():
         MessageBox = ctypes.windll.user32.MessageBoxW
         MessageBox(None, 'Hello,\n\nYou have completed 25 minutes on uninterupted studying. Well done.\nTime to take a 7 minute break.\n\nCheers!\n', 'A Segment of Pomodoro Completed', 0)
        
-        # Opens random 80s music video
-        youtube_list = ["https://www.youtube.com/watch?v=M7JVlpm0eRs","https://www.youtube.com/watch?v=N6uEMOeDZsA","https://www.youtube.com/watch?v=nqAvFx3NxUM", "https://www.youtube.com/watch?v=HgzGwKwLmgM", "https://www.youtube.com/watch?v=-ihs-vT9T3Q", "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://www.youtube.com/watch?v=pIgZ7gMze7A", "https://www.youtube.com/watch?v=Gs069dndIYk", "https://www.youtube.com/watch?v=Lrle0x_DHBM", "https://www.youtube.com/watch?v=1dNIQVYGXbM", "https://www.youtube.com/watch?v=r0qBaBb1Y-U", "https://www.youtube.com/watch?v=gwS9BIqbffU", "https://www.youtube.com/watch?v=Y3ywicffOj4", "https://www.youtube.com/watch?v=v0KpfrJE4zw", "https://www.youtube.com/watch?v=zQ41hqlV0Kk", "https://www.youtube.com/watch?v=7wRHBLwpASw", "https://www.youtube.com/watch?v=PIb6AZdTr-A", "https://www.youtube.com/watch?v=oXA6CLTDekw" ]
-        webbrowser.open(random.choice(youtube_list), new=1, autoraise=True)
+        # Opens random 80s music video from dictionary
+        musicvideos80s_list = {
+        "Huey Lewis And The News - The Heart Of Rock & Roll":"https://www.youtube.com/watch?v=M7JVlpm0eRs","Huey Lewis And The News - I Want A New Drug":"https://www.youtube.com/watch?v=N6uEMOeDZsA",
+        "Lionel Richie - All Night Long":"https://www.youtube.com/watch?v=nqAvFx3NxUM", "Queen - Don't Stop Me Now":"https://www.youtube.com/watch?v=HgzGwKwLmgM", 
+        "Bee Gees - Night Fever":"https://www.youtube.com/watch?v=-ihs-vT9T3Q", "Rick Astley - Never Gonna Give You Up":"https://www.youtube.com/watch?v=dQw4w9WgXcQ", 
+        "Wham! - Wake Me Up Before You Go-Go":"https://www.youtube.com/watch?v=pIgZ7gMze7A", "Earth, Wind & Fire - September":"https://www.youtube.com/watch?v=Gs069dndIYk", 
+        "Earth, Wind & Fire - Let's Groove":"https://www.youtube.com/watch?v=Lrle0x_DHBM", "Rick James - Give It To Me Baby":"https://www.youtube.com/watch?v=1dNIQVYGXbM", 
+        "Phil Collins - Sussudio":"https://www.youtube.com/watch?v=r0qBaBb1Y-U", "Stevie Nicks - Stand Back":"https://www.youtube.com/watch?v=gwS9BIqbffU",
+        "Fleetwood Mac - Dreams":"https://www.youtube.com/watch?v=Y3ywicffOj4", "Prince - Little Red Corvette":"https://www.youtube.com/watch?v=v0KpfrJE4zw", 
+        "Rod Stewart - Young Turks":"https://www.youtube.com/watch?v=zQ41hqlV0Kk", "ZZ Top - Sharp Dressed Man":"https://www.youtube.com/watch?v=7wRHBLwpASw", 
+        "Madness - Our House":"https://www.youtube.com/watch?v=oXA6CLTDekw"}
+        webbrowser.open(random.choice(list(musicvideos80s_list.values())), new=1, autoraise=True)
         
         # Starts timer for 7 mins (420 seconds)
         time.sleep(420)
@@ -51,9 +60,18 @@ def pomodoro():
         MessageBox = ctypes.windll.user32.MessageBoxW
         MessageBox(None, 'Hello,\n\nYou have completed 25 minutes on uninterupted studying. Well done.\nTime to take a 30 minute break before coming back.\n\nCheers!\n', 'Last Segment of Pomodoro Completed', 0)
        
-        # Opens random 80s music video
-        youtube_list = ["https://www.youtube.com/watch?v=M7JVlpm0eRs","https://www.youtube.com/watch?v=N6uEMOeDZsA","https://www.youtube.com/watch?v=nqAvFx3NxUM", "https://www.youtube.com/watch?v=HgzGwKwLmgM", "https://www.youtube.com/watch?v=-ihs-vT9T3Q", "https://www.youtube.com/watch?v=dQw4w9WgXcQ", "https://www.youtube.com/watch?v=pIgZ7gMze7A", "https://www.youtube.com/watch?v=Gs069dndIYk", "https://www.youtube.com/watch?v=Lrle0x_DHBM", "https://www.youtube.com/watch?v=1dNIQVYGXbM", "https://www.youtube.com/watch?v=r0qBaBb1Y-U", "https://www.youtube.com/watch?v=gwS9BIqbffU", "https://www.youtube.com/watch?v=Y3ywicffOj4", "https://www.youtube.com/watch?v=v0KpfrJE4zw", "https://www.youtube.com/watch?v=zQ41hqlV0Kk", "https://www.youtube.com/watch?v=7wRHBLwpASw", "https://www.youtube.com/watch?v=PIb6AZdTr-A", "https://www.youtube.com/watch?v=oXA6CLTDekw" ]
-        webbrowser.open(random.choice(youtube_list), new=1, autoraise=True)
+        # Opens random 80s music video from dictionary
+        musicvideos80s_list = {
+        "Huey Lewis And The News - The Heart Of Rock & Roll":"https://www.youtube.com/watch?v=M7JVlpm0eRs","Huey Lewis And The News - I Want A New Drug":"https://www.youtube.com/watch?v=N6uEMOeDZsA",
+        "Lionel Richie - All Night Long":"https://www.youtube.com/watch?v=nqAvFx3NxUM", "Queen - Don't Stop Me Now":"https://www.youtube.com/watch?v=HgzGwKwLmgM", 
+        "Bee Gees - Night Fever":"https://www.youtube.com/watch?v=-ihs-vT9T3Q", "Rick Astley - Never Gonna Give You Up":"https://www.youtube.com/watch?v=dQw4w9WgXcQ", 
+        "Wham! - Wake Me Up Before You Go-Go":"https://www.youtube.com/watch?v=pIgZ7gMze7A", "Earth, Wind & Fire - September":"https://www.youtube.com/watch?v=Gs069dndIYk", 
+        "Earth, Wind & Fire - Let's Groove":"https://www.youtube.com/watch?v=Lrle0x_DHBM", "Rick James - Give It To Me Baby":"https://www.youtube.com/watch?v=1dNIQVYGXbM", 
+        "Phil Collins - Sussudio":"https://www.youtube.com/watch?v=r0qBaBb1Y-U", "Stevie Nicks - Stand Back":"https://www.youtube.com/watch?v=gwS9BIqbffU",
+        "Fleetwood Mac - Dreams":"https://www.youtube.com/watch?v=Y3ywicffOj4", "Prince - Little Red Corvette":"https://www.youtube.com/watch?v=v0KpfrJE4zw", 
+        "Rod Stewart - Young Turks":"https://www.youtube.com/watch?v=zQ41hqlV0Kk", "ZZ Top - Sharp Dressed Man":"https://www.youtube.com/watch?v=7wRHBLwpASw", 
+        "Madness - Our House":"https://www.youtube.com/watch?v=oXA6CLTDekw"}
+        webbrowser.open(random.choice(list(musicvideos80s_list.values())), new=1, autoraise=True)
         
         # Starts timer for 30 mins (1800 seconds)
         time.sleep(1800)
